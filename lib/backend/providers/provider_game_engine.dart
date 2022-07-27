@@ -79,9 +79,9 @@ class GameEngineProvider extends ChangeNotifier {
   }
 
   void evaluteGame() {
-    if (isThisWholeColumnPlayedByThisPlayer(Player.one, 1) ||
-        isThisWholeColumnPlayedByThisPlayer(Player.one, 2) ||
-        isThisWholeColumnPlayedByThisPlayer(Player.one, 3) ||
+    if (isThisWholeRowPlayedByThisPlayer(Player.one, 1) ||
+        isThisWholeRowPlayedByThisPlayer(Player.one, 2) ||
+        isThisWholeRowPlayedByThisPlayer(Player.one, 3) ||
         isThisWholeColumnPlayedByThisPlayer(Player.one, 1) ||
         isThisWholeColumnPlayedByThisPlayer(Player.one, 2) ||
         isThisWholeColumnPlayedByThisPlayer(Player.one, 3) ||
@@ -89,9 +89,9 @@ class GameEngineProvider extends ChangeNotifier {
         isWholeLTRDiagonalColumnPlayedByThisPlayer(Player.one)) {
       gameResult = GameResult.player1Won;
       notifyListeners();
-    } else if (isThisWholeColumnPlayedByThisPlayer(Player.two, 1) ||
-        isThisWholeColumnPlayedByThisPlayer(Player.two, 2) ||
-        isThisWholeColumnPlayedByThisPlayer(Player.two, 3) ||
+    } else if (isThisWholeRowPlayedByThisPlayer(Player.two, 1) ||
+        isThisWholeRowPlayedByThisPlayer(Player.two, 2) ||
+        isThisWholeRowPlayedByThisPlayer(Player.two, 3) ||
         isThisWholeColumnPlayedByThisPlayer(Player.two, 1) ||
         isThisWholeColumnPlayedByThisPlayer(Player.two, 2) ||
         isThisWholeColumnPlayedByThisPlayer(Player.two, 3) ||
